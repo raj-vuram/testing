@@ -1,0 +1,78 @@
+/**
+ * @author Akshaya Rangesh
+ * @email akshayagr@vuram.com
+ * @create date 2019-02-06 09:44:56
+ * @modify date 2019-02-06 09:44:56
+ * @desc [description]
+ */
+
+.FullWidthCard {
+  background-color: #ffffff;
+  cursor: pointer;
+  border:1px solid #dee1e4;
+  border-radius:3px;
+  padding:20px;
+  margin-top:30px;  
+}
+.FullWidthCard:first-child{
+  margin-top:20px;
+}
+
+.FullWidthCard img {
+  width: 92px;
+  height: 92px;
+  border-radius: 5px;
+  margin-right: 20px;  
+  margin-bottom:3px;
+}
+.FullWidthCard p {
+  margin-bottom: 0px !important;
+}
+.ContentPadding {
+  padding-left: 30px;
+}
+.StatusGreenColor{
+color: #6dcc78 !important;
+padding-right: 5px;
+}
+.StatusRedColor{
+color: #e02626 !important;
+padding-right: 5px;
+}
+
+.Time {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.ItemCount {
+  font-weight: bold;
+  font-size: 18px !important;
+  padding-right: 3px;
+}
+
+.Icon {
+  width: 10px !important;
+  height: 16px !important;
+  object-fit: contain;
+  position: absolute;
+  top:50%;
+  right:7px;
+}
+@media only screen and (max-width: 768px) {
+  .Icon{
+    right:-3px;
+  }
+  .FullWidthCard:first-child{
+    margin-top:39px;
+  } 
+  .Time {
+    align-self: flex-end;
+    text-align: start;
+  }
+}
+
+
+.LabelPadding {
+  padding-bottom: 3px;
+}

@@ -1,0 +1,38 @@
+.Header{
+    background-color: #13436e;
+}
+
+.LowerContainer{    
+    padding-right:16px;    
+    display: flex;
+    width: 100%;
+    padding-top: 116px;
+    padding-bottom:37px;
+    overflow: hidden;
+}
+@media only screen and (max-width: 575px) {
+    .LowerContainer{
+      padding-left:0px !important;
+      padding-right: 0px !important;
+    }
+    .PageTitle{
+      font-size:28px;
+    }
+  }
+  @media only screen and (max-width: 768px) and (min-width:576px) {   
+    .PageTitle{
+      font-size:36px;
+    }
+  }
+.CurrentPageContainer{
+background-color: #193661;
+}
+.OrgImage{
+    width: 97px;
+    height: 97px;
+    border-radius: 3px;
+}
+.OrgDetailsContainer{
+    margin-left:30px;
+    word-break: break-word;
+}

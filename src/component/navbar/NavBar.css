@@ -1,0 +1,12 @@
+.NavBarBrandImg{
+    height:40px;
+}
+.NotificationBadge{
+    position: absolute;
+    top: -3px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background-color: #ee6723;
+    border-radius: 50%;
+}

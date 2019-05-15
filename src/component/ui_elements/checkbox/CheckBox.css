@@ -1,0 +1,93 @@
+/**
+ * @author Asttle
+ * @email asttlej@vuram.com
+ * @create date 2018-11-27 17:34:11
+ * @modify date 2018-11-27 17:34:11
+ * @desc [description]
+*/
+
+/* The Container */
+.Container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.Container input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.Checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #dee1e4;
+  border-radius: 3px;
+}
+
+.Error .Checkmark{
+  border:1px solid #e02626; 
+  background-color: #fdf4f4; 
+}
+
+/* On mouse-over, add a grey background color */
+.Container:hover input[type=checkbox] ~ .Checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.Container input[type=checkbox]:checked ~ .Checkmark {
+  background-color: #fff;
+  border:1px solid #cc9933;
+}
+
+/* Create the Checkmark/indicator (hidden when not checked) */
+.Checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the Checkmark when checked */
+.Container input[type=checkbox]:checked ~ .Checkmark:after {
+  display: block;
+}
+
+/* Style the Checkmark/indicator */
+.Container .Checkmark:after {
+  left: 9px;
+  top: 4px;
+  width: 7px;
+  height: 13px;
+  border: solid #cc9933;
+  border-width: 0 2.5px 2.5px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.LineHeight32{
+  line-height: 32px !important;
+}
+
+/* .ButtonCheckBox{
+   
+    background-image: url('../../../assets/checkbox.svg') !important;
+}
+.ButtonCheckBox:checked{
+    background-image: url('../../../assets/checkbox-selected.svg') !important;
+} */
